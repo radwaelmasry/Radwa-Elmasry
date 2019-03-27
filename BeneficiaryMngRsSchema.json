@@ -1,0 +1,424 @@
+  1 {
+  2   "definitions": {},
+  3   "$schema": "http://json-schema.org/draft-07/schema#",
+  4   "$id": "http://example.com/root.json",
+  5   "type": "object",
+  6   "title": "The Root Schema",
+  7   "required": [
+  8     "soapenv:Envelope"
+  9   ],
+ 10   "properties": {
+ 11     "soapenv:Envelope": {
+ 12       "$id": "#/properties/soapenv:Envelope",
+ 13       "type": "object",
+ 14       "title": "The Soapenv:envelope Schema",
+ 15       "required": [
+ 16         "@xmlns",
+ 17         "soapenv:Body"
+ 18       ],
+ 19       "properties": {
+ 20         "@xmlns": {
+ 21           "$id": "#/properties/soapenv:Envelope/properties/@xmlns",
+ 22           "type": "object",
+ 23           "title": "The @xmlns Schema",
+ 24           "required": [
+ 25             "soapenv"
+ 26           ],
+ 27           "properties": {
+ 28             "soapenv": {
+ 29               "$id": "#/properties/soapenv:Envelope/properties/@xmlns/properties/soapenv",
+ 30               "type": "string",
+ 31               "title": "The Soapenv Schema",
+ 32               "default": "",
+ 33               "examples": [
+ 34                 "http://schemas.xmlsoap.org/soap/envelope/"
+ 35               ],
+ 36               "pattern": "^(.*)$"
+ 37             }
+ 38           }
+ 39         },
+ 40         "soapenv:Body": {
+ 41           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body",
+ 42           "type": "object",
+ 43           "title": "The Soapenv:body Schema",
+ 44           "required": [
+ 45             "@xmlns",
+ 46             "ben:BeneficiaryMngRs"
+ 47           ],
+ 48           "properties": {
+ 49             "@xmlns": {
+ 50               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/@xmlns",
+ 51               "type": "object",
+ 52               "title": "The @xmlns Schema",
+ 53               "required": [
+ 54                 "soapenv"
+ 55               ],
+ 56               "properties": {
+ 57                 "soapenv": {
+ 58                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/@xmlns/properties/soapenv",
+ 59                   "type": "string",
+ 60                   "title": "The Soapenv Schema",
+ 61                   "default": "",
+ 62                   "examples": [
+ 63                     "http://schemas.xmlsoap.org/soap/envelope/"
+ 64                   ],
+ 65                   "pattern": "^(.*)$"
+ 66                 }
+ 67               }
+ 68             },
+ 69             "ben:BeneficiaryMngRs": {
+ 70               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs",
+ 71               "type": "object",
+ 72               "title": "The Ben:beneficiarymngrs Schema",
+ 73               "required": [
+ 74                 "@xmlns",
+ 75                 "Hdr"
+ 76               ],
+ 77               "properties": {
+ 78                 "@xmlns": {
+ 79                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/@xmlns",
+ 80                   "type": "object",
+ 81                   "title": "The @xmlns Schema",
+ 82                   "required": [
+ 83                     "soapenv",
+ 84                     "arb",
+ 85                     "ben"
+ 86                   ],
+ 87                   "properties": {
+ 88                     "soapenv": {
+ 89                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/@xmlns/properties/soapenv",
+ 90                       "type": "string",
+ 91                       "title": "The Soapenv Schema",
+ 92                       "default": "",
+ 93                       "examples": [
+ 94                         "http://schemas.xmlsoap.org/soap/envelope/"
+ 95                       ],
+ 96                       "pattern": "^(.*)$"
+ 97                     },
+ 98                     "arb": {
+ 99                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/@xmlns/properties/arb",
+100                       "type": "string",
+101                       "title": "The Arb Schema",
+102                       "default": "",
+103                       "examples": [
+104                         "http://www.alrajhiwebservices.com/"
+105                       ],
+106                       "pattern": "^(.*)$"
+107                     },
+108                     "ben": {
+109                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/@xmlns/properties/ben",
+110                       "type": "string",
+111                       "title": "The Ben Schema",
+112                       "default": "",
+113                       "examples": [
+114                         "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+115                       ],
+116                       "pattern": "^(.*)$"
+117                     }
+118                   }
+119                 },
+120                 "Hdr": {
+121                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr",
+122                   "type": "object",
+123                   "title": "The Hdr Schema",
+124                   "required": [
+125                     "@xmlns",
+126                     "arb:Status",
+127                     "arb:RqID"
+128                   ],
+129                   "properties": {
+130                     "@xmlns": {
+131                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/@xmlns",
+132                       "type": "object",
+133                       "title": "The @xmlns Schema",
+134                       "required": [
+135                         "soapenv",
+136                         "arb",
+137                         "ben"
+138                       ],
+139                       "properties": {
+140                         "soapenv": {
+141                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/@xmlns/properties/soapenv",
+142                           "type": "string",
+143                           "title": "The Soapenv Schema",
+144                           "default": "",
+145                           "examples": [
+146                             "http://schemas.xmlsoap.org/soap/envelope/"
+147                           ],
+148                           "pattern": "^(.*)$"
+149                         },
+150                         "arb": {
+151                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/@xmlns/properties/arb",
+152                           "type": "string",
+153                           "title": "The Arb Schema",
+154                           "default": "",
+155                           "examples": [
+156                             "http://www.alrajhiwebservices.com/"
+157                           ],
+158                           "pattern": "^(.*)$"
+159                         },
+160                         "ben": {
+161                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/@xmlns/properties/ben",
+162                           "type": "string",
+163                           "title": "The Ben Schema",
+164                           "default": "",
+165                           "examples": [
+166                             "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+167                           ],
+168                           "pattern": "^(.*)$"
+169                         }
+170                       }
+171                     },
+172                     "arb:Status": {
+173                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status",
+174                       "type": "object",
+175                       "title": "The Arb:status Schema",
+176                       "required": [
+177                         "@xmlns",
+178                         "arb:StatusCd",
+179                         "arb:StatusDesc"
+180                       ],
+181                       "properties": {
+182                         "@xmlns": {
+183                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/@xmlns",
+184                           "type": "object",
+185                           "title": "The @xmlns Schema",
+186                           "required": [
+187                             "soapenv",
+188                             "arb",
+189                             "ben"
+190                           ],
+191                           "properties": {
+192                             "soapenv": {
+193                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/@xmlns/properties/soapenv",
+194                               "type": "string",
+195                               "title": "The Soapenv Schema",
+196                               "default": "",
+197                               "examples": [
+198                                 "http://schemas.xmlsoap.org/soap/envelope/"
+199                               ],
+200                               "pattern": "^(.*)$"
+201                             },
+202                             "arb": {
+203                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/@xmlns/properties/arb",
+204                               "type": "string",
+205                               "title": "The Arb Schema",
+206                               "default": "",
+207                               "examples": [
+208                                 "http://www.alrajhiwebservices.com/"
+209                               ],
+210                               "pattern": "^(.*)$"
+211                             },
+212                             "ben": {
+213                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/@xmlns/properties/ben",
+214                               "type": "string",
+215                               "title": "The Ben Schema",
+216                               "default": "",
+217                               "examples": [
+218                                 "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+219                               ],
+220                               "pattern": "^(.*)$"
+221                             }
+222                           }
+223                         },
+224                         "arb:StatusCd": {
+225                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd",
+226                           "type": "object",
+227                           "title": "The Arb:statuscd Schema",
+228                           "required": [
+229                             "@xmlns",
+230                             "$"
+231                           ],
+232                           "properties": {
+233                             "@xmlns": {
+234                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd/properties/@xmlns",
+235                               "type": "object",
+236                               "title": "The @xmlns Schema",
+237                               "required": [
+238                                 "soapenv",
+239                                 "arb",
+240                                 "ben"
+241                               ],
+242                               "properties": {
+243                                 "soapenv": {
+244                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd/properties/@xmlns/properties/soapenv",
+245                                   "type": "string",
+246                                   "title": "The Soapenv Schema",
+247                                   "default": "",
+248                                   "examples": [
+249                                     "http://schemas.xmlsoap.org/soap/envelope/"
+250                                   ],
+251                                   "pattern": "^(.*)$"
+252                                 },
+253                                 "arb": {
+254                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd/properties/@xmlns/properties/arb",
+255                                   "type": "string",
+256                                   "title": "The Arb Schema",
+257                                   "default": "",
+258                                   "examples": [
+259                                     "http://www.alrajhiwebservices.com/"
+260                                   ],
+261                                   "pattern": "^(.*)$"
+262                                 },
+263                                 "ben": {
+264                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd/properties/@xmlns/properties/ben",
+265                                   "type": "string",
+266                                   "title": "The Ben Schema",
+267                                   "default": "",
+268                                   "examples": [
+269                                     "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+270                                   ],
+271                                   "pattern": "^(.*)$"
+272                                 }
+273                               }
+274                             },
+275                             "$": {
+276                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusCd/properties/$",
+277                               "type": "string",
+278                               "title": "The $ Schema",
+279                               "default": "",
+280                               "examples": [
+281                                 "I000000"
+282                               ],
+283                               "pattern": "^(.*)$"
+284                             }
+285                           }
+286                         },
+287                         "arb:StatusDesc": {
+288                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc",
+289                           "type": "object",
+290                           "title": "The Arb:statusdesc Schema",
+291                           "required": [
+292                             "@xmlns",
+293                             "$"
+294                           ],
+295                           "properties": {
+296                             "@xmlns": {
+297                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc/properties/@xmlns",
+298                               "type": "object",
+299                               "title": "The @xmlns Schema",
+300                               "required": [
+301                                 "soapenv",
+302                                 "arb",
+303                                 "ben"
+304                               ],
+305                               "properties": {
+306                                 "soapenv": {
+307                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc/properties/@xmlns/properties/soapenv",
+308                                   "type": "string",
+309                                   "title": "The Soapenv Schema",
+310                                   "default": "",
+311                                   "examples": [
+312                                     "http://schemas.xmlsoap.org/soap/envelope/"
+313                                   ],
+314                                   "pattern": "^(.*)$"
+315                                 },
+316                                 "arb": {
+317                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc/properties/@xmlns/properties/arb",
+318                                   "type": "string",
+319                                   "title": "The Arb Schema",
+320                                   "default": "",
+321                                   "examples": [
+322                                     "http://www.alrajhiwebservices.com/"
+323                                   ],
+324                                   "pattern": "^(.*)$"
+325                                 },
+326                                 "ben": {
+327                                   "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc/properties/@xmlns/properties/ben",
+328                                   "type": "string",
+329                                   "title": "The Ben Schema",
+330                                   "default": "",
+331                                   "examples": [
+332                                     "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+333                                   ],
+334                                   "pattern": "^(.*)$"
+335                                 }
+336                               }
+337                             },
+338                             "$": {
+339                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:Status/properties/arb:StatusDesc/properties/$",
+340                               "type": "string",
+341                               "title": "The $ Schema",
+342                               "default": "",
+343                               "examples": [
+344                                 "Successful Operation"
+345                               ],
+346                               "pattern": "^(.*)$"
+347                             }
+348                           }
+349                         }
+350                       }
+351                     },
+352                     "arb:RqID": {
+353                       "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID",
+354                       "type": "object",
+355                       "title": "The Arb:rqid Schema",
+356                       "required": [
+357                         "@xmlns",
+358                         "$"
+359                       ],
+360                       "properties": {
+361                         "@xmlns": {
+362                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID/properties/@xmlns",
+363                           "type": "object",
+364                           "title": "The @xmlns Schema",
+365                           "required": [
+366                             "soapenv",
+367                             "arb",
+368                             "ben"
+369                           ],
+370                           "properties": {
+371                             "soapenv": {
+372                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID/properties/@xmlns/properties/soapenv",
+373                               "type": "string",
+374                               "title": "The Soapenv Schema",
+375                               "default": "",
+376                               "examples": [
+377                                 "http://schemas.xmlsoap.org/soap/envelope/"
+378                               ],
+379                               "pattern": "^(.*)$"
+380                             },
+381                             "arb": {
+382                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID/properties/@xmlns/properties/arb",
+383                               "type": "string",
+384                               "title": "The Arb Schema",
+385                               "default": "",
+386                               "examples": [
+387                                 "http://www.alrajhiwebservices.com/"
+388                               ],
+389                               "pattern": "^(.*)$"
+390                             },
+391                             "ben": {
+392                               "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID/properties/@xmlns/properties/ben",
+393                               "type": "string",
+394                               "title": "The Ben Schema",
+395                               "default": "",
+396                               "examples": [
+397                                 "http://www.alrajhiwebservices.com/AlRajhiBeneficiaries"
+398                               ],
+399                               "pattern": "^(.*)$"
+400                             }
+401                           }
+402                         },
+403                         "$": {
+404                           "$id": "#/properties/soapenv:Envelope/properties/soapenv:Body/properties/ben:BeneficiaryMngRs/properties/Hdr/properties/arb:RqID/properties/$",
+405                           "type": "string",
+406                           "title": "The $ Schema",
+407                           "default": "",
+408                           "examples": [
+409                             "20181104-1219-0022-0052-201811041256"
+410                           ],
+411                           "pattern": "^(.*)$"
+412                         }
+413                       }
+414                     }
+415                   }
+416                 }
+417               }
+418             }
+419           }
+420         }
+421       }
+422     }
+423   }
+424 }
